@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>calculator</title>
+    <link type="text/stylesheet" href="design.css">
+    <style>
+    table tbody tr td{
+        border: solid 0px;
+    }
+     input{
+         width: 100%;
+     }
+
+    </style>
+</head>
+<body>
+    
+    <form name="myform">
+        
+    <table style="border-collapse:collapse;">
+        <thead>
+        <tr>
+            <td colspan="4"><input type="text" value="" id="calc" name="display" placeholder="0" >
+        </tr>
+        </thead>
+    <tbody style=" border-collapse: collapse;">
+    <tr>  
+    <td><input type="button" value="C" onclick= "myform.display.value=null">
+    <td><input type="button" value="(" onclick="calculate(this.value)">
+    <td><input type="button" value=")" onclick="calculate(this.value)">
+    <td><input type="button" value="/" onclick="calculate(this.value)">
+    </tr>
+    <tr>  
+    <td><input type="button" value="7" onclick="calculate(this.value)">
+    <td><input type="button" value="8" onclick="calculate(this.value)">
+    <td><input type="button" value="9" onclick="calculate(this.value)">
+    <td><input type="button" value="*" onclick="calculate(this.value)">
+    </tr>  
+    <tr>  
+            <td><input type="button" value="4" onclick="calculate(this.value)">
+            <td><input type="button" value="5" onclick="calculate(this.value)">
+            <td><input type="button" value="6" onclick="calculate(this.value)">
+            <td><input type="button" value="-" onclick="calculate(this.value)">
+            </tr>
+            <tr>  
+            <td><input type="button" value="1" onclick="calculate(this.value)">
+            <td><input type="button" value="2" onclick="calculate(this.value)">
+            <td><input type="button" value="3" onclick="calculate(this.value)">
+            <td><input type="button" value="+" onclick="calculate(this.value)">
+                </tr> 
+            <tr>  
+              <td><input type="button" value="&#8730"  onclick= "calculate(this.value)">
+              <td><input type="button" value="0" onclick="calculate(this.value)">
+              <td><input type="button" value="." onclick="calculate(this.value)">
+                
+              <td><input type="button" id="mybtn" value="=" onclick="myform.display.value = myform.display.value + '=' + eval(myform.display.value)">
+            </tr> 
+     </tbody>
+</table>
+<input type="text" id="calc" style="display:none" >
+</form>
+<script>
+   
+        function calculate(x)
+        {
+            if( x=="√")
+            {
+            myform.display.value= myform.display.value + "Math.sqrt(";
+            }
+           else{
+            myform.display.value= myform.display.value + x;
+          }
+        }
+    
+    var input = document.getElementById("calc");
+    input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+  
+    event.preventDefault();
+    document.getElementById("mybtn").click();
+    }
+    });
+    
+     
+    </script>
+</body>
+</html>
