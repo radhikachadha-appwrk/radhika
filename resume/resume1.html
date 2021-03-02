@@ -7,13 +7,17 @@
     }
 
     ul li:before {
-        content: '✓';
+        content: '✔ ';
+        
     }
 
     table tr th {
         border: 1px solid;
     }
-
+ 
+    th, td {
+  padding: 10px;
+}
     table tr td {
         border: 1px solid;
     }
@@ -36,7 +40,7 @@
 </head>
 
 <body onload="showdata()">
-    <div id="container" style="padding: 15px;">
+    <div id="container" style="padding: 15px; margin-left: 23%; width: 50%;">
         <div id="head" style="display: flex; justify-content: space-between">
             <div>
                 <span id="fname" style="font-weight: bold;">Radhika chadha</span><br>
@@ -46,15 +50,15 @@
                 <span id="fmobno">9805499301</span><br>
                 <span id="fmail">uic.19mca8126@gmail.com </span>
             </div>
-            <div id="pic">
-                <img src="pic1.png">
+            <div>
+                <img src="pic1.png" id="ResumeImg" />
             </div>
         </div>
         <hr style="border:2px solid">
 
         <div id="objective">
             <h4>Career objective:</h4>
-            <p style="margin-top: 0px; padding-top: 0px;">To work in a firm with a professional work driven environment where I can utilize and
+            <p>To work in a firm with a professional work driven environment where I can utilize and
                 apply my knowledge, skills which would enable me as a fresher graduate to grow while
                 fulfilling organizational goals.</p>
         </div>
@@ -68,11 +72,11 @@
         </ul>
         <h4>Computer skills:</h4>
         <ul>
-            <label> Programming Languages: <span id="ftech1">C, C++.</span></label><br>
-            <label>Web Technology: <span id="ftech2"></li> HTML, CSS.</span></label>
+          <label> Programming Languages: <span id="ftech1">C, C++.</span></label><br>
+            <label>Web Technology: <span id="ftech2"></li> HTML, CSS.</span></label><br>
         </ul>
         <h4>Educational Qualification:</h4>
-        <table style="border-collapse:collapse;border:1px solid">
+        <table style="border-collapse:collapse;border:1px solid;width:400px; ">
             <tr>
                 <th>Degree/Certifications</th>
                 <th>Qualification</th>

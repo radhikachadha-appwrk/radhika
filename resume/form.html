@@ -18,193 +18,194 @@
         <form action="resume1.html" id="userform">
             <h3 style="text-align: center;background-color:black; color: white; ">Personal Details</h3>
             <hr>
-            <div id="details" >
+            <div id="details">
                 <table>
-                        <tr>
-                            <td><label> Name:</label>
-                            <td><input type="text" id="fname" name="fname" placeholder="Name" required></td>
-                            <td><label> Address:</label>
-                            <td><input type="text" id="faddrs" placeholder="Address">
-                        </tr>
-                        <tr>
-                            <td><label> Mobile Number:</label>
-                            <td><input type="tel" id="fmobno" placeholder="Mobile Number" >
-                            <td><label> Email:</label>
-                            <td><input type="email" id="fmail" placeholder="Email">
-                        </tr>
-                        <tr>
-                            <td><label>Date Of Birth:</label>
-                            <td><input type="date" id="dob" data-date="" data-date-format="DD MMMM YYYY" Placeholder="DOB">
-                            <td><label>Upload your pic:</label> 
-                             <td><input type="image"></td>   
-                            </tr>
-                            <tr>
-                            <td><label>Gender</label>
-                            <td><input type="radio" id="female" name="gender" value="female">
+                    <tr>
+                        <td><label> Name:</label>
+                        <td><input type="text" id="fname" name="fname" placeholder="Name" required></td>
+                        <td><label> Address:</label>
+                        <td><input type="text" id="faddrs" placeholder="Address">
+                    </tr>
+                    
+                    <tr>
+                        <td><label> Mobile Number:</label>
+                        <td><input type="tel" value="+91" size="2" maxlength="3" > <input type="tel" id="fmobno" placeholder="Mobile Number" size="10" pattern="[1-9]{1}[0-9]{9}" maxlength="10">
+                        <td><label> Email:</label> 
+                        <td><input type="email" id="fmail" placeholder="Email">
+                    </tr>
+                    <tr>
+                        <td><label>Date Of Birth:</label>
+                        <td><input type="date" id="dob" data-date="" data-date-format="DD MMMM YYYY" Placeholder="DOB">
+                        <td><label>Upload your pic:</label>
+                        <td><input type="file" id="RImg" accept="image/*"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label>
+                        <td><input type="radio" id="female" name="gender" value="female">
                             <label for="female">female</label>
-                            <td><input type="radio" id="male" name="gender" value="male">
+                        <td><input type="radio" id="male" name="gender" value="male">
                             <label for="male">male</label>
-                            </tr>
+                    </tr>
                 </table>
 
-                            <h3 style="text-align: center; background-color:black; color: white; ">Personal Skills</h3>
-                    <hr>
-            <table>
-
-            <tr>
-                <td><label> Skills:</label>
-                <td><input type="text" id="fskill1" placeholder="skill1"></td>
-                <td><input type="text" id="fskill2" placeholder="skill2"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="text" id="fskill3" placeholder="skill3"></td>
-                <td><input type="text" id="fskill4" placeholder="skill4"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="text" id="fskill5" placeholder="skill5"></td>
-            </tr>
-        </table>
-            <h3 style="text-align: center; background-color:black; color: white;">Technical Skills</h3>
-            <hr>
-            <table>
-            <td><label> Technical Skills:</label>
-                <td><input type="text" id="ftech1" placeholder=" Technical skill1" >
-                <td><input type="text" id="ftech2" placeholder="Technical Skill2">
-            </tr>
-             </table>
-        <h3 style="text-align: center; background-color:black; color: white;"> Education Qualification</h3>
-        <hr>
-        <table>
-            <tr>
-                <td></td>
-                <td><label style="font-weight: bold;">Post graduation</label>
-            </tr>
-            <tr>
-                <td>Qualification
-                <td><input type="text" id="fquali1" placeholder="Degree">
-            </tr>
-            <tr>
-                <td><label>Institute</label>
-                <td><input type="text" id="finst1" placeholder="Institute">
-            </tr>
-            <tr>
-                <td><label>Board/University</label>
-                <td><input type="text" id="board1" placeholder="Board">
-            </tr>
-            <tr>
-                <td><label>Year</label>
-                <td><input type="text" id="yop1" placeholder="yop">
-            </tr>
-            <tr>
-                <td><label>Aggregate Percentage/CGPA</label>
-                <td><input type="text" id="percent1" placeholder="percentage">
-            </tr>
-            <tr>
-                <td></td>
-                <td><label style="font-weight: bold;">Graduation</label>
-            </tr>
-            <tr>
-                <td><label>Qualification</label>
-                <td id="tech2"><input type="text" id="fquali2" placeholder="Degree">
-            </tr>
-            <tr>
-                <td><label>Institute</label>
-                <td><input type="text" id="finst2" placeholder="Institute">
-            </tr>
-            <tr>
-                <td><label>Board/University</label>
-                <td><input type="text" id="fboard2" placeholder="board">
-            </tr>
-            <tr>
-                <td><label>Year</label>
-                <td><input type="text" id="yop2" placeholder="yop">
-            </tr>
-            <tr>
-                <td><label>Aggregate Percentage/CGPA</label>
-                <td><input type="text" id="percent2" placeholder="Percentage/CGPA">
-            </tr>
-            <tr>
-                <td></td>
-                <td><label style="font-weight: bold;">12TH</label>
-            </tr>
-            <tr>
-                <td><label>Qualification</label>
-                <td id="tech3"><input type="text" id="fquali3" placeholder="Degree">
-            </tr>
-            <tr>
-                <td><label>Institute</label>
-                <td><input type="text" id="finst3" placeholder="Institute">
-            </tr>
-            <tr>
-                <td><label>Board/University</label>
-                <td><input type="text" id="fboard3" placeholder="board">
-            </tr>
-            <tr>
-                <td><label>Year</label>
-                <td><input type="text" id="yop3" placeholder="yop">
-            </tr>
-            <tr>
-                <td><label >Aggregate Percentage/CGPA</label>
-                <td><input type="text3" id="percent3" placeholder="Percentage/CGPA">
-            </tr>
-            <tr>
-                <td></td>
-                <td><label style="font-weight: bold;">10TH</label>
-            </tr>
-            <tr>
-                <td><label>Qualification</label>
-                <td id="tech4"><input type="text" id="fquali4" placeholder="Degree">
-            </tr>
-            <tr>
-                <td><label>Institute</label>
-                <td><input type="text" id="finst4" placeholder="Institute">
-            </tr>
-            <tr>
-                <td><label>Board/University</label>
-                <td><input type="text" id="fboard4" placeholder="board">
-            </tr>
-            <tr>
-                <td><label>Year</label>
-                <td><input type="text" id="yop4" placeholder="yop">
-            </tr>
-            <tr>
-                <td><label>Aggregate Percentage/CGPA</label>
-                <td><input type="text4" id="percent4" placeholder="Percentage/CGPA" >
-            </tr>
-        </table>
-                    <h3 style="text-align: center; background-color:black; color: white;">Academic Projects:</h3>
+                <h3 style="text-align: center; background-color:black; color: white; ">Personal Skills</h3>
                 <hr>
                 <table>
-                <tr>
-                    <td>Projects:</td>
-                <td><input type="text" id="fprojects1" placeholder="project 1">
-                    <td><input type="text" id="fprojects2"placeholder="project 2">
-                     </tr>
-                     <tr>
-                         <td></td>
-                        <td><input type="text" id="fprojects3" placeholder="project 3">
-                     </tr>
 
-        </table>
+                    <tr>
+                        <td><label> Skills:</label>
+                        <td><input type="text" id="fskill1" placeholder="skill1"></td>
+                        <td><input type="text" id="fskill2" placeholder="skill2"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="text" id="fskill3" placeholder="skill3"></td>
+                        <td><input type="text" id="fskill4" placeholder="skill4"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="text" id="fskill5" placeholder="skill5"></td>
+                    </tr>
+                </table>
+                <h3 style="text-align: center; background-color:black; color: white;">Technical Skills</h3>
+                <hr>
+                <table>
+                    <td><label> Technical Skills:</label>
+                    <td><input type="text" id="ftech1" placeholder=" Technical skill1">
+                    <td><input type="text" id="ftech2" placeholder="Technical Skill2">
+                        </tr>
+                </table>
+                <h3 style="text-align: center; background-color:black; color: white;"> Education Qualification</h3>
+                <hr>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td><label style="font-weight: bold;">Post graduation</label>
+                    </tr>
+                    <tr>
+                        <td>Qualification
+                        <td><input type="text" id="fquali1" placeholder="Degree">
+                    </tr>
+                    <tr>
+                        <td><label>Institute</label>
+                        <td><input type="text" id="finst1" placeholder="Institute">
+                    </tr>
+                    <tr>
+                        <td><label>Board/University</label>
+                        <td><input type="text" id="board1" placeholder="Board">
+                    </tr>
+                    <tr>
+                        <td><label>Year</label>
+                        <td><input type="text" id="yop1" placeholder="yop">
+                    </tr>
+                    <tr>
+                        <td><label>Aggregate Percentage/CGPA</label>
+                        <td><input type="text" id="percent1" placeholder="percentage">
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label style="font-weight: bold;">Graduation</label>
+                    </tr>
+                    <tr>
+                        <td><label>Qualification</label>
+                        <td id="tech2"><input type="text" id="fquali2" placeholder="Degree">
+                    </tr>
+                    <tr>
+                        <td><label>Institute</label>
+                        <td><input type="text" id="finst2" placeholder="Institute">
+                    </tr>
+                    <tr>
+                        <td><label>Board/University</label>
+                        <td><input type="text" id="fboard2" placeholder="board">
+                    </tr>
+                    <tr>
+                        <td><label>Year</label>
+                        <td><input type="text" id="yop2" placeholder="yop">
+                    </tr>
+                    <tr>
+                        <td><label>Aggregate Percentage/CGPA</label>
+                        <td><input type="text" id="percent2" placeholder="Percentage/CGPA">
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label style="font-weight: bold;">12TH</label>
+                    </tr>
+                    <tr>
+                        <td><label>Qualification</label>
+                        <td id="tech3"><input type="text" id="fquali3" placeholder="Degree">
+                    </tr>
+                    <tr>
+                        <td><label>Institute</label>
+                        <td><input type="text" id="finst3" placeholder="Institute">
+                    </tr>
+                    <tr>
+                        <td><label>Board/University</label>
+                        <td><input type="text" id="fboard3" placeholder="board">
+                    </tr>
+                    <tr>
+                        <td><label>Year</label>
+                        <td><input type="text" id="yop3" placeholder="yop">
+                    </tr>
+                    <tr>
+                        <td><label>Aggregate Percentage/CGPA</label>
+                        <td><input type="text3" id="percent3" placeholder="Percentage/CGPA">
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label style="font-weight: bold;">10TH</label>
+                    </tr>
+                    <tr>
+                        <td><label>Qualification</label>
+                        <td id="tech4"><input type="text" id="fquali4" placeholder="Degree">
+                    </tr>
+                    <tr>
+                        <td><label>Institute</label>
+                        <td><input type="text" id="finst4" placeholder="Institute">
+                    </tr>
+                    <tr>
+                        <td><label>Board/University</label>
+                        <td><input type="text" id="fboard4" placeholder="board">
+                    </tr>
+                    <tr>
+                        <td><label>Year</label>
+                        <td><input type="text" id="yop4" placeholder="yop">
+                    </tr>
+                    <tr>
+                        <td><label>Aggregate Percentage/CGPA</label>
+                        <td><input type="text4" id="percent4" placeholder="Percentage/CGPA">
+                    </tr>
+                </table>
+                <h3 style="text-align: center; background-color:black; color: white;">Academic Projects:</h3>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Projects:</td>
+                        <td><input type="text" id="fprojects1" placeholder="project 1">
+                        <td><input type="text" id="fprojects2" placeholder="project 2">
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="text" id="fprojects3" placeholder="project 3">
+                    </tr>
+
+                </table>
                 <h3 style="text-align: center; background-color:black; color: white;"> Hobbies</h3>
                 <hr>
                 <table>
                     <td><label>Hobbies</label></td>
-                <td><input type="text" id="fhobbies1" placeholder="hobby 1">
-                <td><input type="text" id="fhobbies2" placeholder="hobby 2">
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="text" id="fhobbies3" placeholder="hobby 3">
-            </tr>
-        </table>
+                    <td><input type="text" id="fhobbies1" placeholder="hobby 1">
+                    <td><input type="text" id="fhobbies2" placeholder="hobby 2">
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" id="fhobbies3" placeholder="hobby 3">
+                        </tr>
+                </table>
 
-            </tr>
+                </tr>
 
-            </table>
-            <button id="btn" type="submit" style="text-align: center;" onclick="sendData()">Submit</button>
+                </table>
+                <button id="btn" type="submit" style="text-align: center;" onclick="sendData()">Submit</button>
         </form>
     </div>
 

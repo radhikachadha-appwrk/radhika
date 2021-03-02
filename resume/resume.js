@@ -3,11 +3,14 @@ function sendData(){
     var formdata= document.forms.userform;
     var formdetails= new FormData(formdata);
     const gender=formdetails.get("gender");
+    
     const name=document.getElementById('fname').value;
     const adrs =document.getElementById('faddrs').value;
     const mobn=document.getElementById('fmobno').value;
     const email=document.getElementById('fmail').value;
     const dob=document.getElementById("dob").value;
+    const img=document.getElementById("RImg").value;
+   // alert(img);
     const skills1=document.getElementById('fskill1').value;
     const skills2=document.getElementById('fskill2').value;
     const skills3=document.getElementById('fskill3').value;
@@ -88,7 +91,8 @@ function sendData(){
         project3:project3,
         hobby1:hobby1,
         hobby2:hobby2,
-        hobby3:hobby3
+        hobby3:hobby3,
+        img:img
         
         };
     var arr=[];
@@ -140,7 +144,7 @@ function showdata(){
             document.getElementById("fhobbies2").innerHTML=s.hobby2;
             document.getElementById("fhobbies3").innerHTML=s.hobby3;
             document.getElementById("gender").innerHTML=s.gender;
-
+            document.getElementById("ResumeImg").src=s.img;
  
 
             
@@ -151,6 +155,7 @@ function showdata(){
         }
     }
 }
+
 
 
 
